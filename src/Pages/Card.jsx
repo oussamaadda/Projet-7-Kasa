@@ -4,8 +4,7 @@ import { useSearchParams } from 'react-router-dom'
 import Navbar from "../Layout/Navbar"
 import Footer from "../Layout/Footer"
 import Shaping from "../Components/Shaping"
-
-
+import Collapse from '../Components/Collapse'
 import Carousel from '../Components/Carousel'
 
 import "../Styles/Card.css"
@@ -71,8 +70,10 @@ function Card() {
 
 
                 {/* affiche la description et les équipements */}
-                
-
+                <div className='collapseLogement'>
+                    <Collapse title='Description' content={record.description}/>
+                    <Collapse title="Equipements" content={equipements}/>
+                </div>
             </Shaping>
             <Footer />
         </div>
