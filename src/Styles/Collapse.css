@@ -13,6 +13,10 @@
     list-style-type: none;
 }
 
+#classUl ul{
+    list-style: none;
+}
+
 .collapse__header {
     display: flex;
     justify-content: space-between;

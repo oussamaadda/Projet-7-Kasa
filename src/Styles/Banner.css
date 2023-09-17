@@ -11,6 +11,12 @@
     background-color: cover;
     border-radius: 25px;
 }
+.banner2 {
+    background: url("../assets/BackgroundFilter.png"), url("../assets/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
 
 .banner h1{
     display: flex;
