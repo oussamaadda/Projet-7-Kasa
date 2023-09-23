@@ -12,7 +12,7 @@ function Routes(){
     const router= createBrowserRouter([
         {path:"/", element:<Home/>, errorElement:<Error404/> },
         {path:'/logement', element: <Card/>, errorElement:<Error404/>},
-        {path:"*", errorElement:<Error404/>},
+        {path:"*", element:<Error404/>},
         {path:"/about", element:<About/>, errorElement:<Error404/>}
     ]);
     ReactDOM.createRoot(document.getElementById("root")).render(
