@@ -13,8 +13,8 @@ function Error404(){
                 <Navbar/>
                 <div className="error error-commun">
                     <span>404</span>
-                    <h4>Oups! La page que vous demandez n'exista pas.</h4>
-                    <p><Link to="/">Retourner sur la page d'acueil</Link></p>
+                    <h4>Oups! La page que vous demandez n'existe pas.</h4>
+                    <p><Link to="/">Retourner sur la page d'accueil</Link></p>
                 </div>
             </Shaping>
             <Footer/>
