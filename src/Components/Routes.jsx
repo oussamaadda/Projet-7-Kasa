@@ -4,16 +4,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Card from '../Pages/Card';
 import Home from '../Pages/Home';
-import Error404 from "../Pages/Error404";
+import ErrorPage from "../Pages/Error404";
 import About from "../Pages/About";
 
 
 function Routes(){
     const router= createBrowserRouter([
-        {path:"/", element:<Home/>, errorElement:<Error404/> },
-        {path:'/logement', element: <Card/>, errorElement:<Error404/>},
-        {path:"*", element:<Error404/>},
-        {path:"/about", element:<About/>, errorElement:<Error404/>}
+        { path:"/", element:<Home />, errorElement:<ErrorPage /> },
+        { path: "/about", element: <About />, errorElement:<ErrorPage /> },
+        { path: "/logement", element: <Card />, errorElement:<ErrorPage /> },
+        { path: "*", element: <ErrorPage /> } 
     ]);
     ReactDOM.createRoot(document.getElementById("root")).render(
         <React.StrictMode>

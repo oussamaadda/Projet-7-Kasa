@@ -9,6 +9,7 @@ import Carousel from '../Components/Carousel'
 
 import "../Styles/Card.css"
 import records from "../Datas/Logements.json"
+import Error404 from './Error404'
 
 const arrayStars = [1, 2, 3, 4, 5]
 
@@ -21,12 +22,12 @@ function Card() {
     const record = records.find(element => element.id === idLogement)
     
     // si l'URL à été modifié manuellement, redirection vers la page d'erreur
-
+    if (!record) return(<Error404 />)
 
     // récupère la liste des équipements
     const equipements = record.equipments.map((element, index) => (
-          <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
-        ))
+        <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
+      ))
     
 
     return (
